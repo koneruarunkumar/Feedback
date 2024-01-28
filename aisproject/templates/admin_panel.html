@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1 class="text-center bg-info">Admin Panel</h1>
+
+    <h2>Clients</h2>
+    <ul>
+        {% for client in clients %}
+            <li>{{ client }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Feedbacks</h2>
+    <ul>
+        {% for feedback in feedbacks %}
+            <li>{{ feedback }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
